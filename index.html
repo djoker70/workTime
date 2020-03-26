@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>workTime</title>
+    <script type="text/javascript" src="workTime.js"></script>
+    <style>
+        .row{
+            width: 1325px;
+        }
+        .row:nth-child(2n+1) {
+            background: #f5d19b;
+        }
+        .row:nth-child(2n) {
+            background: #f5683c;
+        }
+        div {
+            height: 20px;
+        }
+        .inlineBlock {
+            display: inline-block;
+        }
+        .name {
+            padding: 0;
+            border: 1px solid black;
+            border-right: none;
+            margin-right: -0.25em;
+            width: 50px;
+        }
+        .position {
+            padding: 0;
+            border: 1px solid black;
+            margin-right: -0.25em;
+            width: 150px;
+        }
+        .time {
+            text-align: center;
+            margin-right: -0.25em;
+            box-sizing: border-box;
+            padding: 0;
+            width: 45px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" hidden value="virtual" id="switcher">
+    <input type="date" id="dateStart" onchange="changeDate()">
+    <input type="date" id="dateEnd" onchange="changeDate()">
+    <div id="table" style="margin-top: 10px;">
+        <div id="head">
+            <div class="row">
+                <div class="inlineBlock name">Имя</div>
+                <div class="inlineBlock position">Место работы / роль</div>
+                <div class="inlineBlock time">00:00</div>
+                <div class="inlineBlock time">01:00</div>
+                <div class="inlineBlock time">02:00</div>
+                <div class="inlineBlock time">03:00</div>
+                <div class="inlineBlock time">04:00</div>
+                <div class="inlineBlock time">05:00</div>
+                <div class="inlineBlock time">06:00</div>
+                <div class="inlineBlock time">07:00</div>
+                <div class="inlineBlock time">08:00</div>
+                <div class="inlineBlock time">09:00</div>
+                <div class="inlineBlock time">10:00</div>
+                <div class="inlineBlock time">11:00</div>
+                <div class="inlineBlock time">12:00</div>
+                <div class="inlineBlock time">13:00</div>
+                <div class="inlineBlock time">14:00</div>
+                <div class="inlineBlock time">15:00</div>
+                <div class="inlineBlock time">16:00</div>
+                <div class="inlineBlock time">17:00</div>
+                <div class="inlineBlock time">18:00</div>
+                <div class="inlineBlock time">19:00</div>
+                <div class="inlineBlock time">20:00</div>
+                <div class="inlineBlock time">21:00</div>
+                <div class="inlineBlock time">22:00</div>
+                <div class="inlineBlock time">23:00</div>
+                <div class="inlineBlock time">24:00</div>
+            </div>
+        </div>
+        <div id="body">
+
+        </div>
+    </div>
+</body>
+</html>
